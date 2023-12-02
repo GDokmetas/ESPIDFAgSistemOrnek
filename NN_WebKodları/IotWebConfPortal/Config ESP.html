@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://192.168.4.1/ -->
+<html lang="tr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Config ESP</title>
+
+<script>function c(l){document.getElementById('s').value=l.innerText||l.textContent;document.getElementById('p').focus();}; function pw(id) { var x=document.getElementById(id); if(x.type==='password') {x.type='text';} 
+else {x.type='password';} };</script>
+
+<style>
+.de{background-color:#ffaaaa;} .em{font-size:0.8em;color:#bb0000;padding-bottom:0px;} 
+.c{text-align: center;} div,input,select{padding:5px;font-size:1em;} input{width:95%;} select{width:100%} 
+input[type=checkbox]{width:auto;scale:1.5;margin:10px;} body{text-align: center;font-family:verdana;} 
+button{border:0;border-radius:0.3rem;background-color:#16A1E7;color:#fff;line-height:2.4rem;font-size:1.2rem;width:100%;} fieldset{border-radius:0.3rem;margin: 0px;}
+</style>
+
+</head>
+<body><div style="text-align:left;display:inline-block;min-width:260px;">
+
+<form action="http://192.168.4.1/" method="post"><input type="hidden" name="iotSave" value="true">
+
+<fieldset id="iwcSys"><legend>Sistem Ayarları</legend>
+<div class=""><label for="ap_name">AP Ağ Adı</label><input type="text" id="ap_name" name="ap_name" 32="" placeholder="" value="TestNetwork"><div class="em"></div></div>
+<div class=""><label for="ap_pass">AP Şifresi</label><input type="password" id="ap_pass" name="ap_pass" 32="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+<div class=""><label for="sta_ssid">WiFi Ağ Adı</label><input type="text" id="sta_ssid" name="sta_ssid" 32="" placeholder="" value="Impektra_2.4GHz"><div class="em"></div></div>
+<div class=""><label for="sta_pass">WiFi Şifresi</label><input type="password" id="sta_pass" name="sta_pass" 32="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+</fieldset>
+<fieldset id="mqttConfGroup"><legend>MQTT Ayarları</legend>
+<div class=""><label for="mqqt_server_name">Sunucu</label><input type="text" id="mqtt_server_name" name="mqtt_server_name" 79="" placeholder="" value="95.216.186.10"><div class="em"></div></div>
+<div class=""><label for="mqtt_server_port">Port</label><input type="text" id="mqtt_server_port" name="mqtt_server_port" 5="" placeholder="" value="1883"><div class="em"></div></div>
+<div class=""><label for="mqtt_server_user">Kullanıcı Adı</label><input type="text" id="mqtt_server_user" name="mqtt_server_user" 34="" placeholder="" value="impektra"><div class="em"></div></div>
+<div class=""><label for="mqtt_server_pass">MQTT Şifre</label><input type="text" id="mqtt_server_pass" name="mqtt_server_pass" 34="" placeholder="" value="qp9weS6EpUqbptfhVVc4ERZjmbgeqzKj "><div class="em"></div></div>
+</fieldset>
+
+<fieldset id="wifiConfGrup"><legend>Wifi Configuration</legend>
+<div class=""><label for="extWifiSSID1">SSID 1</label><input type="text" id="extWifiSSID1" name="extWifiSSID1" 29="" placeholder="" value=""><div class="em"></div></div>
+<div class=""><label for="extWifi1Pass">Password 1</label><input type="text" id="extWifi1Pass" name="extWifi1Pass" 29="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+<div class=""><label for="extWifiSSID2">SSID 2</label><input type="text" id="extWifiSSID2" name="extWifiSSID2" 29="" placeholder="" value=""><div class="em"></div></div>
+<div class=""><label for="extWifi2Pass">Password 2</label><input type="text" id="extWifi2Pass" name="extWifi2Pass" 29="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+<div class=""><label for="extWifiSSID3">SSID 3</label><input type="text" id="extWifiSSID3" name="extWifiSSID3" 29="" placeholder="" value=""><div class="em"></div></div>
+<div class=""><label for="extWifi3Pass">Password 3</label><input type="text" id="extWifi3Pass" name="extWifi3Pass" 29="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+<div class=""><label for="extWifiSSID4">SSID 4</label><input type="text" id="extWifiSSID4" name="extWifiSSID4" 29="" placeholder="" value=""><div class="em"></div></div>
+<div class=""><label for="extWifi4Pass">Password 4</label><input type="text" id="extWifi4Pass" name="extWifi4Pass" 29="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+<div class=""><label for="extWifiSSID5">SSID 5</label><input type="text" id="extWifiSSID5" name="extWifiSSID5" 29="" placeholder="" value=""><div class="em"></div></div>
+<div class=""><label for="extWifi5Pass">Password 5</label><input type="text" id="extWifi5Pass" name="extWifi5Pass" 29="" placeholder="" value="" ondblclick="pw(this.id)"><div class="em"></div></div>
+</fieldset>
+<button type="submit" style="margin-top: 10px;">Kaydet</button></form>
+</div></body>
+</html>
